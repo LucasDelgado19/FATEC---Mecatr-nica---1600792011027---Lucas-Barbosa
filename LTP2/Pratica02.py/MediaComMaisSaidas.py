@@ -4,3 +4,4 @@ resposta = (numero1 + numero2) / 2
 print ("A média dos valores colocados é:", resposta)
 print ("A média de %i com %i é: %f" %(numero1, numero2, resposta))
 print ("A média de {} com {} é: {}".format(numero1, numero2, resposta))
+print ("A média de", numero1, "com", numero2, "é:",resposta)
