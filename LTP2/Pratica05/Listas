@@ -1,0 +1,30 @@
+lista_1 = []
+lista_2 = []
+lista_3 = []
+
+quantidade_na_lista_1 = int(input("Quantos valores tem dentro da lista 1? "))
+contador = 0
+while contador < quantidade_na_lista_1:
+  valor = int(input('Valor:'))
+  lista_1.append(valor)
+  contador = contador + 1
+print('Itens na lista 1: ', lista_1)
+print ('Quantidade de itens na lista:', len(lista_1))
+
+print('\n')
+
+quantidade_na_lista_2 = int(input('Quantos valores tem dentro da lista 2? '))
+contador = 0
+while contador < quantidade_na_lista_2:
+  valor = int(input('Valor:'))
+  lista_2.append(valor)
+  contador = contador + 1
+print('Itens da lista 2: ', lista_2)
+print ('Quantidade de itens na lista:', len(lista_2))
+
+print ('\n')
+
+#Não vai somar, vai apenas juntar uma lista na outra
+lista_3 = lista_1 + lista_2
+print ('O resultado da soma entre as listas é igual a: ',lista_3)
+
