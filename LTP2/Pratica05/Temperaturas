@@ -1,0 +1,34 @@
+temperatura = []
+acima = []
+
+valor = int (input('Quantos valores tem?: '))
+contador = 0
+while contador < valor: 
+  temp = int(input('Valor da temperatura: '))
+  temperatura.append(temp)
+  contador = contador + 1
+print ('As temperaturas listadas foram: ', temperatura)
+
+print('\n')
+print('\n')
+
+#Média das temperaturas
+media =  sum(temperatura) / valor
+print ('A média das temperaturas é: ', media)
+print('\n')
+
+#Maior que a média
+for temp in temperatura:
+  if temp > media:
+    acima.append(temp)
+print ('As temperaturas acima da média são: ', acima)
+print('\n')
+
+#Maior temperatura
+maior = max(temperatura)
+print('A maior temperatura listada foi: ', maior)
+print('\n')
+
+#Menos temperatura
+menor = min(temperatura)
+print('A menor temperatura listada foi: ', menor)
