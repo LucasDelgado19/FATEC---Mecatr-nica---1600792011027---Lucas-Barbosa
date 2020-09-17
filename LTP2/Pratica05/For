@@ -1,0 +1,59 @@
+numeros = []
+par = []
+impar = []
+negativo = []
+positivo = []
+contador = 0
+
+quantidade = int(input("Quantidade de valores que deseja informar: "))
+while contador < quantidade:
+  valor = int (input('Valor:'))
+  numeros.append(valor)
+  contador = contador + 1
+
+print ('Valores informados: ')
+print (numeros)
+
+#Valores pares
+for valor in numeros:
+  if (valor > 0) & (valor % 2 ==0):
+   par.append(valor)
+
+if len(par) == 0:
+    print ('Não tem numero par nessa lista.')
+else:
+  print ('Os numeros pares dessa lista: ', par)
+
+#Valores ímpares
+for valor in numeros:
+  if (valor>0) & (valor % 2 != 0):
+    impar.append(valor)
+
+if len(impar) == 0:
+    print ('Não tem numero impar nessa lista.')
+else:
+  print ('Os numeros impar dessa lista: ', impar)
+
+#Valores negativos
+for valor in numeros:
+  if (valor < 0):
+    negativo.append(valor)
+
+if len(negativo) == 0:
+    print ('Não tem numero negativo nessa lista.')
+else:
+  print ('Os numeros negativos dessa lista: ', negativo)
+
+#Valores positivos
+for valor in numeros:
+  if (valor > 0):
+    positivo.append(valor)
+
+if len(positivo) == 0:
+    print ('Não tem numero positivo nessa lista.')
+else:
+  print ('Os numeros positivos dessa lista: ', positivo)
+
+
+
+print ('Quantiade de números na lista: ',len(numeros))
