@@ -1,0 +1,19 @@
+#jeito 1
+nome = input ("Qual o nome do(a) herói? ")
+poder = input ("Qual o poder dele(a)? ")
+origem = input ("Qual é a origem dele? ")
+universo = input ("De qual universo pertence? ")
+
+heroi = {"nome":nome, "poder":poder, "origem":origem, "universo":universo}
+
+print (heroi)
+
+
+#jeito 2
+heroi2 = {}
+heroi2 ['nome'] = nome
+heroi2 ['poder'] = poder
+heroi2 ['origem'] = origem
+heroi2 ['universo'] = origem
+
+print (heroi2)
