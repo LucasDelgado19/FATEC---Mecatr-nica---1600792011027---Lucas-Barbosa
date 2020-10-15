@@ -1,0 +1,11 @@
+
+carteira = {"despesa":0, "receita":0, "emprestimo":0}
+
+continuar = True
+
+while continuar:
+  opcao = input("Qual o tipo?").lower()
+  valor = float(input("Valor:"))
+  carteira[opcao] += valor
+  print (carteira)
+  conitnuar = input ("Continuar?") == 's'
