@@ -16,3 +16,7 @@ print (personagens)
 print ("\n")
 for categoria in personagens.keys() : 
     print ("Categoria: ", categoria, "tem ", personagens[categoria])
+
+for categoria in personagens.keys() :
+  porcentagem = len(personagens[categoria])/n
+  print ("Categoria", categoria, "-", porcentagem*100,"%")
