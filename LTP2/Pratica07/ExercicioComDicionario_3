@@ -1,0 +1,18 @@
+n = int(input('Quantos personagens você deseja informar?: '))
+
+personagens = {"dps":[], "healer":[], "tank":[], "support":[]}
+
+continuar = 0
+while continuar < n:
+  nome = input ('Informe o nome do personagem: ')
+  categoria = input('Informe a classe: ').lower()
+  if categoria in personagens.keys():
+    personagens[categoria].append(nome)
+  else:
+    print("Classe", categoria, "não existe.")
+  continuar = continuar + 1
+print ("\n")
+print (personagens)
+print ("\n")
+for categoria in personagens.keys() : 
+    print ("Categoria: ", categoria, "tem ", personagens[categoria])
