@@ -11,5 +11,5 @@ while continuar == True:
   print (gastos)
   continuar = input('Continuar? ').lower() == 's'
 
-for categoria in gastos():
+for categoria in gastos.keys():
   print ("Categoria: ", categoria, ", Valor: ", gastos[categoria])
