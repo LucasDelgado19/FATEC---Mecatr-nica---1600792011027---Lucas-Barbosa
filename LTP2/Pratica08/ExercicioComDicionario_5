@@ -1,0 +1,30 @@
+personagens = {"dps":[], "healer":[], "tank":[], "support":[]}
+total = 0
+
+continuar = True
+while continuar == True:
+  total = total + 1
+  nome = input ('Informe o nome do personagem: ')
+  categoria = input('Informe a classe: ').lower()
+  if categoria in personagens.keys():
+    personagens[categoria].append(nome)
+  else:
+    print("Classe", categoria, "não existe.")
+  continuar = input ('Continuar? ').lower() == 's'
+print ("\n")
+print (personagens)
+print ("\n")
+for categoria in personagens.keys() : 
+    print ("Categoria: ", categoria, "tem ", personagens[categoria])
+
+
+for categoria in personagens.keys() :
+  porcentagem = len(personagens[categoria])/total
+  print ("Categoria", categoria, "-", porcentagem*100,"%")
+
+
+
+if (porcentagem*100) == 25:
+  print('Seu time está balenceado!')
+else:
+  print ('Seu time não está balanceado!')
